@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razormist.sendsmsapp.MainActivity">
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="Contact Number"/>
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:gravity="left"
+        android:layout_below="@+id/et_contact"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/et_message"
+        android:layout_centerHorizontal="true"
+        android:text="send"/>
+
+</RelativeLayout>
